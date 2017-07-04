@@ -18,9 +18,9 @@ namespace Net.Chdk.Meta.Providers.CameraModel.Xml
             PlatformGenerator = platformGenerator;
         }
 
-        public IDictionary<string, PlatformData> GetPlatforms(string path)
+        public IDictionary<string, PlatformData> GetPlatforms(Stream stream)
         {
-            var tag = ReadModelIdTag(path);
+            var tag = ReadModelIdTag(stream);
             var keys = tag.Values;
             var values = keys
                 .Where(k => k.Value != "EOS D30")
@@ -156,15 +156,12 @@ namespace Net.Chdk.Meta.Providers.CameraModel.Xml
             return -1;
         }
 
-        private static Tag ReadModelIdTag(string path)
+        private static Tag ReadModelIdTag(Stream stream)
         {
             var serializer = new XmlSerializer(typeof(TagInfo));
-            using (var stream = new FileStream(path, FileMode.Open))
-            {
-                var tagInfo = (TagInfo)serializer.Deserialize(stream);
-                var table = tagInfo.Tables.Single(t => t.Name == "CanonRaw::Main");
-                return table.Tags.Single(t => t.Name == "CanonModelID");
-            }
+            var tagInfo = (TagInfo)serializer.Deserialize(stream);
+            var table = tagInfo.Tables.Single(t => t.Name == "CanonRaw::Main");
+            return table.Tags.Single(t => t.Name == "CanonModelID");
         }
 
         private static KeyValuePair<string, string> GetValue(Key key)
