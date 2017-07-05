@@ -52,10 +52,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CameraModel.cs" />
-    <Compile Include="Model\Key.cs" />
-    <Compile Include="Model\Table.cs" />
-    <Compile Include="Model\Tag.cs" />
-    <Compile Include="Model\TagInfo.cs" />
     <Compile Include="ServiceCollectionExtensions.cs" />
     <Compile Include="StringExtensions.cs" />
     <Compile Include="XmlPlatformProvider.cs" />
@@ -74,10 +70,15 @@
       <Project>{7B156222-138C-4977-98D9-D14F1BD76016}</Project>
       <Name>Net.Chdk.Meta.Providers.CameraModel.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Net.Chdk.Meta.Providers.CameraModel.Xml.Model\Net.Chdk.Meta.Providers.CameraModel.Xml.Model.csproj">
+      <Project>{36775924-6d05-4d99-b93c-33419f26e73c}</Project>
+      <Name>Net.Chdk.Meta.Providers.CameraModel.Xml.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="..\..\..\Net.Chdk.Core\src\Net.Chdk.Shared\Net.Chdk.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
