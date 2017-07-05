@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace Net.Chdk.Meta.Providers.CameraModel.Xml.Model
+namespace Net.Chdk.Meta.Providers.Platform.Xml.Model
 {
     public sealed class Tag
     {

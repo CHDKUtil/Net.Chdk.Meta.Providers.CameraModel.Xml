@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.Chdk.Meta.Providers.CameraModel.Xml", "Net.Chdk.Meta.Providers.CameraModel.Xml.csproj", "{AE88BBBE-D598-4BD6-87A8-76F044DBE73C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.Chdk.Meta.Providers.Platform.Xml", "Net.Chdk.Meta.Providers.Platform.Xml.csproj", "{AE88BBBE-D598-4BD6-87A8-76F044DBE73C}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Net.Chdk.Shared", "..\..\..\Net.Chdk.Core\src\Net.Chdk.Shared\Net.Chdk.Shared.shproj", "{83C6A77C-3286-4F5F-B628-3B971097AD05}"
 EndProject
@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.Chdk.Meta.Model.CameraM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.Chdk.Meta.Generators.Platform.Core", "..\..\..\Net.Chdk.Meta.Generators.Platform.Core\src\Net.Chdk.Meta.Generators.Platform.Core\Net.Chdk.Meta.Generators.Platform.Core.csproj", "{229C4264-4206-427E-B912-B7649E5485BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.Chdk.Meta.Providers.CameraModel.Xml.Model", "..\Net.Chdk.Meta.Providers.CameraModel.Xml.Model\Net.Chdk.Meta.Providers.CameraModel.Xml.Model.csproj", "{36775924-6D05-4D99-B93C-33419F26E73C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.Chdk.Meta.Providers.Platform.Xml.Model", "..\Net.Chdk.Meta.Providers.Platform.Xml.Model\Net.Chdk.Meta.Providers.Platform.Xml.Model.csproj", "{36775924-6D05-4D99-B93C-33419F26E73C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.Chdk.Meta.Providers.Platform", "..\..\..\Net.Chdk.Meta.Providers.Platform\src\Net.Chdk.Meta.Providers.Platform\Net.Chdk.Meta.Providers.Platform.csproj", "{4CFF4B6A-D6E1-42F2-A18C-9FB57CDC8ABE}"
 EndProject

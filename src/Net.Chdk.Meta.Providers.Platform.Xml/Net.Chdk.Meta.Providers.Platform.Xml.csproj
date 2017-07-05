@@ -7,8 +7,8 @@
     <ProjectGuid>{AE88BBBE-D598-4BD6-87A8-76F044DBE73C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Net.Chdk.Meta.Providers.CameraModel.Xml</RootNamespace>
-    <AssemblyName>Net.Chdk.Meta.Providers.CameraModel.Xml</AssemblyName>
+    <RootNamespace>Net.Chdk.Meta.Providers.Platform.Xml</RootNamespace>
+    <AssemblyName>Net.Chdk.Meta.Providers.Platform.Xml</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -72,9 +72,9 @@
       <Project>{4CFF4B6A-D6E1-42F2-A18C-9FB57CDC8ABE}</Project>
       <Name>Net.Chdk.Meta.Providers.Platform</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Net.Chdk.Meta.Providers.CameraModel.Xml.Model\Net.Chdk.Meta.Providers.CameraModel.Xml.Model.csproj">
+    <ProjectReference Include="..\Net.Chdk.Meta.Providers.Platform.Xml.Model\Net.Chdk.Meta.Providers.Platform.Xml.Model.csproj">
       <Project>{36775924-6d05-4d99-b93c-33419f26e73c}</Project>
-      <Name>Net.Chdk.Meta.Providers.CameraModel.Xml.Model</Name>
+      <Name>Net.Chdk.Meta.Providers.Platform.Xml.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

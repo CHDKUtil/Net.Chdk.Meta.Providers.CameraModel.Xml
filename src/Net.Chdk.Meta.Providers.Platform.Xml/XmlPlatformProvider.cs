@@ -1,12 +1,11 @@
 ﻿using Net.Chdk.Meta.Generators.Platform;
-using Net.Chdk.Meta.Providers.CameraModel.Xml.Model;
-using Net.Chdk.Meta.Providers.Platform;
+using Net.Chdk.Meta.Providers.Platform.Xml.Model;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Xml.Serialization;
 
-namespace Net.Chdk.Meta.Providers.CameraModel.Xml
+namespace Net.Chdk.Meta.Providers.Platform.Xml
 {
     sealed class XmlPlatformProvider : PlatformProvider
     {
