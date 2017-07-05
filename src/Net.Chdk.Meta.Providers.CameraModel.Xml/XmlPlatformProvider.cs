@@ -11,6 +11,22 @@ namespace Net.Chdk.Meta.Providers.CameraModel.Xml
 {
     sealed class XmlPlatformProvider : IPlatformProvider
     {
+        private static readonly string[] RemovedValues =
+        {
+            "EOS D30",
+            "PowerShot S300 / Digital IXUS 300 / IXY Digital 300",
+            "PowerShot S500 / Digital IXUS 500 / IXY Digital 500"
+        };
+
+        private static readonly Key[] AddedKeys =
+        {
+            new Key
+            {
+                Id = $"{0x3380000}",
+                Value = "PowerShot N Facebook"
+            }
+        };
+
         private IPlatformGenerator PlatformGenerator { get; }
 
         public XmlPlatformProvider(IPlatformGenerator platformGenerator)
@@ -23,16 +39,9 @@ namespace Net.Chdk.Meta.Providers.CameraModel.Xml
             var tag = ReadModelIdTag(stream);
             var keys = tag.Values;
             var values = keys
-                .Where(k => k.Value != "EOS D30")
-                .Concat(new[]
-                {
-                    new Key
-                    {
-                        Id = $"{0x3380000}",
-                        Value = "PowerShot N Facebook"
-                    }
-                }
-            ).Select(GetValue);
+                .Where(k => !RemovedValues.Contains(k.Value))
+                .Concat(AddedKeys)
+                .Select(GetValue);
 
             return GetPlatforms(values);
         }
