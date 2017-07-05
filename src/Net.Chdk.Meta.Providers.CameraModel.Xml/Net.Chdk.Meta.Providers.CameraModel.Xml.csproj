@@ -51,9 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CameraModel.cs" />
     <Compile Include="ServiceCollectionExtensions.cs" />
-    <Compile Include="StringExtensions.cs" />
     <Compile Include="XmlPlatformProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -69,6 +67,10 @@
     <ProjectReference Include="..\..\..\Net.Chdk.Meta.Providers.CameraModel.Core\src\Net.Chdk.Meta.Providers.CameraModel.Core\Net.Chdk.Meta.Providers.CameraModel.Core.csproj">
       <Project>{7B156222-138C-4977-98D9-D14F1BD76016}</Project>
       <Name>Net.Chdk.Meta.Providers.CameraModel.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Net.Chdk.Meta.Providers.Platform\src\Net.Chdk.Meta.Providers.Platform\Net.Chdk.Meta.Providers.Platform.csproj">
+      <Project>{4CFF4B6A-D6E1-42F2-A18C-9FB57CDC8ABE}</Project>
+      <Name>Net.Chdk.Meta.Providers.Platform</Name>
     </ProjectReference>
     <ProjectReference Include="..\Net.Chdk.Meta.Providers.CameraModel.Xml.Model\Net.Chdk.Meta.Providers.CameraModel.Xml.Model.csproj">
       <Project>{36775924-6d05-4d99-b93c-33419f26e73c}</Project>
