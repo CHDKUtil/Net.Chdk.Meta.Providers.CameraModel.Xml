@@ -64,9 +64,9 @@
       <Project>{00470b0d-065d-48c2-b861-bbaee7e5c1a4}</Project>
       <Name>Net.Chdk.Meta.Model.CameraModel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Net.Chdk.Meta.Providers.CameraModel.Core\src\Net.Chdk.Meta.Providers.CameraModel.Core\Net.Chdk.Meta.Providers.CameraModel.Core.csproj">
-      <Project>{7B156222-138C-4977-98D9-D14F1BD76016}</Project>
-      <Name>Net.Chdk.Meta.Providers.CameraModel.Core</Name>
+    <ProjectReference Include="..\..\..\Net.Chdk.Meta.Providers.Platform.Core\src\Net.Chdk.Meta.Providers.Platform.Core\Net.Chdk.Meta.Providers.Platform.Core.csproj">
+      <Project>{3794F230-39B2-4486-BF06-B528F20E54B2}</Project>
+      <Name>Net.Chdk.Meta.Providers.Platform.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Net.Chdk.Meta.Providers.Platform\src\Net.Chdk.Meta.Providers.Platform\Net.Chdk.Meta.Providers.Platform.csproj">
       <Project>{4CFF4B6A-D6E1-42F2-A18C-9FB57CDC8ABE}</Project>
