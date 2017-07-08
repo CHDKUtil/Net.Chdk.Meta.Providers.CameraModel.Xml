@@ -14,17 +14,17 @@ namespace Net.Chdk.Meta.Providers.Platform.Xml
         {
         }
 
-        protected override IEnumerable<KeyValuePair<string, string>> DoGetPlatforms(Stream stream)
+        protected override IEnumerable<KeyValuePair<string, string>> DoGetPlatforms(TextReader reader)
         {
-            return ReadModelIdTag(stream)
+            return ReadModelIdTag(reader)
                 .Values
                 .Select(GetValue);
         }
 
-        private static Tag ReadModelIdTag(Stream stream)
+        private static Tag ReadModelIdTag(TextReader reader)
         {
             var serializer = new XmlSerializer(typeof(TagInfo));
-            var tagInfo = (TagInfo)serializer.Deserialize(stream);
+            var tagInfo = (TagInfo)serializer.Deserialize(reader);
             var table = tagInfo.Tables.Single(t => t.Name == "CanonRaw::Main");
             return table.Tags.Single(t => t.Name == "CanonModelID");
         }
