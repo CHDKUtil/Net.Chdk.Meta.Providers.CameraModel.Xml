@@ -1,5 +1,4 @@
-﻿using Net.Chdk.Meta.Generators.Platform;
-using Net.Chdk.Meta.Providers.Platform.Xml.Model;
+﻿using Net.Chdk.Meta.Providers.Platform.Xml.Model;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,19 +6,16 @@ using System.Xml.Serialization;
 
 namespace Net.Chdk.Meta.Providers.Platform.Xml
 {
-    sealed class XmlPlatformProvider : PlatformProvider
+    sealed class XmlPlatformProvider : IInnerPlatformProvider
     {
-        public XmlPlatformProvider(IPlatformGenerator platformGenerator)
-            : base(platformGenerator)
-        {
-        }
-
-        protected override IEnumerable<KeyValuePair<string, string>> DoGetPlatforms(TextReader reader)
+        public IEnumerable<KeyValuePair<string, string>> GetPlatforms(TextReader reader)
         {
             return ReadModelIdTag(reader)
                 .Values
                 .Select(GetValue);
         }
+
+        public string Extension => ".xml";
 
         private static Tag ReadModelIdTag(TextReader reader)
         {

@@ -56,17 +56,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Net.Chdk.Meta.Generators.Platform.Core\src\Net.Chdk.Meta.Generators.Platform.Core\Net.Chdk.Meta.Generators.Platform.Core.csproj">
-      <Project>{229c4264-4206-427e-b912-b7649e5485bf}</Project>
-      <Name>Net.Chdk.Meta.Generators.Platform.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\Net.Chdk.Meta.Providers.Platform.Core\src\Net.Chdk.Meta.Providers.Platform.Core\Net.Chdk.Meta.Providers.Platform.Core.csproj">
       <Project>{3794F230-39B2-4486-BF06-B528F20E54B2}</Project>
       <Name>Net.Chdk.Meta.Providers.Platform.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Net.Chdk.Meta.Providers.Platform\src\Net.Chdk.Meta.Providers.Platform\Net.Chdk.Meta.Providers.Platform.csproj">
-      <Project>{4CFF4B6A-D6E1-42F2-A18C-9FB57CDC8ABE}</Project>
-      <Name>Net.Chdk.Meta.Providers.Platform</Name>
     </ProjectReference>
     <ProjectReference Include="..\Net.Chdk.Meta.Providers.Platform.Xml.Model\Net.Chdk.Meta.Providers.Platform.Xml.Model.csproj">
       <Project>{36775924-6d05-4d99-b93c-33419f26e73c}</Project>

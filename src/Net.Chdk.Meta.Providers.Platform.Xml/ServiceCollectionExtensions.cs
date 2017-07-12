@@ -7,7 +7,7 @@ namespace Net.Chdk.Meta.Providers.Platform.Xml
         public static IServiceCollection AddXmlPlatformProvider(this IServiceCollection serviceCollection)
         {
             return serviceCollection
-                .AddSingleton<IPlatformProvider, XmlPlatformProvider>();
+                .AddSingleton<IInnerPlatformProvider, XmlPlatformProvider>();
         }
     }
 }
