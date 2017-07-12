@@ -56,6 +56,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Net.Chdk.Meta.Providers.Core\src\Net.Chdk.Meta.Providers.Core\Net.Chdk.Meta.Providers.Core.csproj">
+      <Project>{a336d62c-4caf-4b19-9602-8ce0e51b4eb4}</Project>
+      <Name>Net.Chdk.Meta.Providers.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Net.Chdk.Meta.Providers.Platform.Core\src\Net.Chdk.Meta.Providers.Platform.Core\Net.Chdk.Meta.Providers.Platform.Core.csproj">
       <Project>{3794F230-39B2-4486-BF06-B528F20E54B2}</Project>
       <Name>Net.Chdk.Meta.Providers.Platform.Core</Name>
