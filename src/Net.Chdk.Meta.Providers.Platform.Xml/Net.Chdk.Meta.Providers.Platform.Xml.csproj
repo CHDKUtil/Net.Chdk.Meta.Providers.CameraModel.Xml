@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
-    <Description>CHIMP XML platform metadata provider</Description>
+    <Description>CHIMP XML EXIF platform metadata provider</Description>
     <RootNamespace>Net.Chdk.Meta.Providers.Platform.Xml</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>0.4.1</Version>
+    <Version>0.5.0</Version>
     <VersionSuffix>alpha</VersionSuffix>
     <Product>CHIMP</Product>
     <Authors>Dmitry Shechtman</Authors>
@@ -22,7 +22,7 @@
     <PackageIconUrl>https://raw.githubusercontent.com/CHDKUtil/CHIMP/master/tiny.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/CHDKUtil/Net.Chdk.Meta.Providers.Platform.Xml</PackageProjectUrl>
     <RepositoryUrl>https://github.com/CHDKUtil/Net.Chdk.Meta.Providers.Platform.Xml</RepositoryUrl>
-    <PackageTags>chimp meta provider platform xml</PackageTags>
+    <PackageTags>chimp meta provider platform xml exif</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -38,6 +38,7 @@
   <ItemGroup>
     <PackageReference Include="microsoft.extensions.dependencyinjection.abstractions" Version="1.1.1" />
     <PackageReference Include="Net.Chdk.Meta.Providers.Platform.Core" Version="0.4.1-alpha" />
+    <PackageReference Include="Net.Chdk.Meta.Providers.Platform.Exif" Version="0.5.0-alpha" />
     <PackageReference Include="Net.Chdk.Meta.Providers.Platform.Xml.Model" Version="0.4.1-alpha" />
     <PackageReference Include="system.xml.xmlserializer" Version="4.3.0" />
   </ItemGroup>

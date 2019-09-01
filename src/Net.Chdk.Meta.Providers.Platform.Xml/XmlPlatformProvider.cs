@@ -1,4 +1,5 @@
-﻿using Net.Chdk.Meta.Providers.Platform.Xml.Model;
+﻿using Net.Chdk.Meta.Providers.Platform.Exif;
+using Net.Chdk.Meta.Providers.Platform.Xml.Model;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -6,16 +7,16 @@ using System.Xml.Serialization;
 
 namespace Net.Chdk.Meta.Providers.Platform.Xml
 {
-    sealed class XmlPlatformProvider : IInnerPlatformProvider
+    sealed class XmlPlatformProvider : ExifPlatformProvider
     {
-        public IEnumerable<KeyValuePair<string, string>> GetPlatforms(TextReader reader)
+        protected override IEnumerable<KeyValuePair<string, string>> GetPlatforms(TextReader reader)
         {
             return ReadModelIdTag(reader)
                 .Values
                 .Select(GetValue);
         }
 
-        public string Extension => ".xml";
+        public override string Extension => ".xml";
 
         private static Tag ReadModelIdTag(TextReader reader)
         {
